@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap project</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-md bg-dark fixed-top">
+    <div class="container-xxl">
+
+        <a href="#intro" class="navbar-brand">
+            <span class="fw-bold text-white">Net Ninja Pro - The Book</span>
+        </a>
+
+        <button class="navbar-toggler bg-body-tertiary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#topics"><span class="bg-white text-black rounded-1 px-2 py-1">About</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#reviews">Reviews</a>
+                </li>
+
+                <li class="nav-item dropdown">
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contact">Get in touch</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#pricing">Pricing</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!--Intro-->
+<section id="intro" class="mt-5">
+    <div class="container-lg pt-5">
+        <div class="row justify-content-start justify-content-md-center">
+
+            <div class="col-md-5 text-center d-md-none">
+                <img class="img-fluid" src="../assets/ebook-cover.png" alt="Ebook cover">
+            </div>
+
+            <div class="col-md-5 text-start">
+                <h1>
+                    <div class="display-2"><span class="text-white bg-dark rounded-3 px-2">Black</span> belt</div>
+                    <div class="display-5 text-muted">Your coding skills</div>
+                </h1>
+                <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#pricing" class="btn btn-secondary btn-lg">Buy now</a>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+                <img class="img-fluid" src="../assets/ebook-cover.png" alt="Ebook cover">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Pricing plans-->
+<section id="pricing" class="bg-light mt-5">
+
+    <div class="container-lg">
+        <div class="text-center d-flex flex-column align-content-center justify-content-center pb-5 pt-4">
+            <h2 class="m-0">Pricing plans</h2>
+            <p class="lead text-muted m-0">Choose a plan that suit you.</p>
+        </div>
+
+        <div class="row mb-5 align-items-center justify-content-center g-3">
+            <div class="col-8 col-md-3 col-lg-3 col-xl-3">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body text-center py-4">
+                        <div class="card-title">Starter edition</div>
+                        <p class="card subtitle border-0">eBook download only</p>
+                        <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                        <p class="card-text my-5 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a href="" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-9 col-md-4 col-lg-4 col-xl-4">
+                <div class="card border-primary border-2 shadow-lg">
+                    <div class="card-header text-center text-primary">Most popular</div>
+                    <div class="card-body text-center py-5">
+                        <div class="card-title">Complete edition</div>
+                        <p class="card subtitle border-0">eBook download & all updates</p>
+                        <p class="display-5 my-4 text-primary fw-bold">$18.99</p>
+                        <p class="card-text my-5 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem debitis dignissimos explicabo, illum laborum nobis nostrum nulla porro quasi ullam.</p>
+                        <a href="" class="btn btn-primary btn-lg mt-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8 col-md-3 col-lg-3 col-xl-3">
+                <div class="card border-2 border-primary shadow-lg">
+                    <div class="card-header text-center text-primary">Best choice</div>
+                    <div class="card-body text-center py-4">
+                        <div class="card-title">Ultimate edition</div>
+                        <p class="card subtitle border-0">Download, updates & extras</p>
+                        <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
+                        <p class="card-text my-5 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a href="" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</section>
+
+<!--Accordions-->
+<section id="topics">
+
+    <div class="container-md">
+
+        <div class="text-center">
+            <h2>Inside the Book...</h2>
+            <p class="lead text-muted">A quick glance at the topics you will learn</p>
+        </div>
+
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+
+            <div class="col-6 col-lg-4">
+                <img src="../assets/kindle.png" class="img-fluid" alt="Ebook">
+            </div>
+
+            <div class="col-6 col-lg-6">
+                <h2>Want to be a <span class="bg-dark text-white rounded-3 px-2">ninja?</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cum cupiditate fugit libero nesciunt odit quo repudiandae? Blanditiis, ex, quas.</p>
+            </div>
+
+        </div>
+
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Chapter 1 - First Web Page
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Chapter 2 - Mastering CSS
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Chapter 3 - The Power of Javascript
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                        Chapter 4 - Storing Data (Firebase Databases)
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                        Chapter 5 - User Authentication
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>
