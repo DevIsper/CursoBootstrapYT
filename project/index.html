@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap project</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 
@@ -14,7 +15,7 @@
     <div class="container-xxl">
 
         <a href="#intro" class="navbar-brand">
-            <span class="fw-bold text-white">Net Ninja Pro - The Book</span>
+            <span class="fw-bold text-white"> <i class="bi bi-book-half"></i> Net Ninja Pro - The Book</span>
         </a>
 
         <button class="navbar-toggler bg-body-tertiary"
@@ -63,13 +64,16 @@
                 <img class="img-fluid" src="../assets/ebook-cover.png" alt="Ebook cover">
             </div>
 
-            <div class="col-md-5 text-start">
+            <div class="col-md-5 text-start mt-3 mt-md-0">
                 <h1>
                     <div class="display-2"><span class="text-white bg-dark rounded-3 px-2">Black</span> belt</div>
                     <div class="display-5 text-muted">Your coding skills</div>
                 </h1>
                 <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 <a href="#pricing" class="btn btn-secondary btn-lg">Buy now</a>
+
+
+                <a href="#sidebar" class="d-block mt-3 text-decoration-none" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Explore my other books</a>
             </div>
             <div class="col-md-5 text-center d-none d-md-block">
                 <img class="img-fluid" src="../assets/ebook-cover.png" alt="Ebook cover">
@@ -83,7 +87,7 @@
 
     <div class="container-lg">
         <div class="text-center d-flex flex-column align-content-center justify-content-center pb-5 pt-4">
-            <h2 class="m-0">Pricing plans</h2>
+            <h2 class="m-0">Pricing plans <i class="bi bi-box-seam-fill"></i></h2>
             <p class="lead text-muted m-0">Choose a plan that suit you.</p>
         </div>
 
@@ -100,9 +104,9 @@
                 </div>
             </div>
 
-            <div class="col-9 col-md-4 col-lg-4 col-xl-4">
+            <div class="col-9 col-md-4 col-lg-4 col-xl-4 pb-md-5">
                 <div class="card border-primary border-2 shadow-lg">
-                    <div class="card-header text-center text-primary">Most popular</div>
+                    <div class="card-header text-center text-primary">Most popular <i class="bi bi-emoji-laughing"></i></div>
                     <div class="card-body text-center py-5">
                         <div class="card-title">Complete edition</div>
                         <p class="card subtitle border-0">eBook download & all updates</p>
@@ -113,9 +117,9 @@
                 </div>
             </div>
 
-            <div class="col-8 col-md-3 col-lg-3 col-xl-3">
+            <div class="col-8 col-md-3 col-lg-3 col-xl-3 pb-5 pb-md-0">
                 <div class="card border-2 border-primary shadow-lg">
-                    <div class="card-header text-center text-primary">Best choice</div>
+                    <div class="card-header text-center text-primary">Best choice <i class="bi bi-check-square"></i></div>
                     <div class="card-body text-center py-4">
                         <div class="card-title">Ultimate edition</div>
                         <p class="card subtitle border-0">Download, updates & extras</p>
@@ -136,99 +140,360 @@
 
 <!--Accordions-->
 <section id="topics">
-
     <div class="container-md">
 
         <div class="text-center">
-            <h2>Inside the Book...</h2>
+            <h2> <i class="bi bi-book"></i> Inside the Book...</h2>
             <p class="lead text-muted">A quick glance at the topics you will learn</p>
         </div>
 
         <div class="row my-5 g-5 justify-content-around align-items-center">
 
-            <div class="col-6 col-lg-4">
+            <div class="col-8 col-md-5">
                 <img src="../assets/kindle.png" class="img-fluid" alt="Ebook">
             </div>
 
-            <div class="col-6 col-lg-6">
-                <h2>Want to be a <span class="bg-dark text-white rounded-3 px-2">ninja?</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cum cupiditate fugit libero nesciunt odit quo repudiandae? Blanditiis, ex, quas.</p>
+            <div class="accordion col-10 col-md-6" id="accordionCorrectId">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-parent="#accordionCorrectId" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            <p>Chapter 1 - First Web Page <i class="bi bi-globe ms-1"> </i></p>
+
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionCorrectId">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-parent="#accordionCorrectId" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            <p>Chapter 2 - Mastering CSS <i class="bi bi-brush-fill ms-1"></i></p>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionCorrectId">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-parent="#accordionCorrectId" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            <p>Chapter 3 - The Power of Javascript <i class="bi bi-code-slash ms-1"></i></p>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionCorrectId">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-parent="#accordionCorrectId" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                            Chapter 4 - Storing Data (Firebase Databases) <i class="bi bi-database-fill ms-1"></i>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionCorrectId">
+                        <div class="accordion-body">
+                            <strong>This is the fourth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-parent="#accordionCorrectId" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                            Chapter 5 - User Authentication <i class="bi bi-shield-lock-fill ms-1"></i>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionCorrectId">
+                        <div class="accordion-body">
+                            <strong>This is the fifth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
 
         </div>
 
+    </div>
+</section>
 
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                        Chapter 1 - First Web Page
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                    <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-            </div>
+<!--Reviews list-->
+<section class="bg-light py-4" id="reviews">
+    <div class="container-lg ">
 
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        Chapter 2 - Mastering CSS
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                        Chapter 3 - The Power of Javascript
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-            </div>
+        <div class="text-center pb-2">
+            <h2>Book reviews <i class="bi bi-people-fill"></i></h2>
+            <p class="lead">What the other ninjas say about the book...</p>
+        </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                        Chapter 4 - Storing Data (Firebase Databases)
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
-            </div>
+        <div class="row m-0">
 
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                        Chapter 5 - User Authentication
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
+            <div class="list-group list-group-horizontal-md flex-wrap justify-content-center gap-2 pe-0">
+                <div class="list-group-item py-3 shadow-lg col-md-5">
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <h5>An essential read for developers</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis cum deserunt doloremque eligendi excepturi hic id laborum laudantium magni modi necessitatibus numquam pariatur quia quis quo similique, temporibus vitae?</p>
+                    <small>Review by: Sarah Larkin <i class="bi bi-person-fill-check"></i></small>
                 </div>
+
+                <div class="list-group-item py-3 shadow-lg col-md-5">
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <h5>The best web development guide</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis cum deserunt doloremque eligendi excepturi hic id laborum laudantium magni modi necessitatibus numquam pariatur quia quis quo similique, temporibus vitae?</p>
+                    <small>Review by: John Stevenson <i class="bi bi-person-fill-check"></i></small>
+                </div>
+
+                <div class="list-group-item py-3 shadow-lg col-md-4">
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <h5>A solid foundation for beginners</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis cum deserunt doloremque eligendi excepturi hic id laborum laudantium magni modi necessitatibus numquam pariatur quia quis quo similique, temporibus vitae?</p>
+                    <small>Review by: Emily Watson <i class="bi bi-person-fill-check"></i></small>
+                </div>
+
+                <div class="list-group-item py-3 shadow-lg col-md-6">
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <h5>A must-have for your library</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis cum deserunt doloremque eligendi excepturi hic id laborum laudantium magni modi necessitatibus numquam pariatur quia quis quo similique, temporibus vitae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aliquam blanditiis consequatur earum ex fugit temporibus voluptatibus? Aut earum est laudantium nostrum porro quia rem repudiandae sapiente sed velit.</p>
+                    <small>Review by: Anthony Fox <i class="bi bi-person-fill-check"></i></small>
+                </div>
+
+                <div class="list-group-item py-3 shadow-lg col-md-10">
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <h5>Transformative for any developer</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis cum deserunt doloremque eligendi excepturi hic id laborum laudantium magni modi necessitatibus numquam pariatur quia quis quo similique, temporibus vitae?</p>
+                    <small>Review by: Linda Matthews <i class="bi bi-person-fill-check"></i></small>
+                </div>
+
+                <div class="list-group-item py-3 shadow-lg col-md-6">
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <h5>A comprehensive guide to web dev</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis cum deserunt doloremque eligendi excepturi hic id laborum laudantium magni modi necessitatibus numquam pariatur quia quis quo similique, temporibus vitae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, debitis dicta eius laboriosam libero magnam molestiae, nesciunt nihil nisi officia perferendis praesentium qui ratione similique soluta suscipit unde veniam voluptates.</p>
+                    <small>Review by: David Howard <i class="bi bi-person-fill-check"></i></small>
+                </div>
+
+                <div class="list-group-item py-3 shadow-lg col-md-4">
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <h5>Highly recommended for coders</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis cum deserunt doloremque eligendi excepturi hic id laborum laudantium magni modi necessitatibus numquam pariatur quia quis quo similique, temporibus vitae?</p>
+                    <small>Review by: Zoe Cooper <i class="bi bi-person-fill-check"></i></small>
+                </div>
+
+                <div class="list-group-item py-3 shadow-lg col-md-10">
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <i class="bi bi-star-fill text-primary"></i>
+                    <h5>Simply outstanding in every way</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, corporis cum deserunt doloremque eligendi excepturi hic id laborum laudantium magni modi necessitatibus numquam pariatur quia quis quo similique, temporibus vitae?</p>
+                    <small>Review by: Chris Evans <i class="bi bi-person-fill-check"></i></small>
+                </div>
+
             </div>
 
         </div>
 
     </div>
-
 </section>
 
-<script src="../js/bootstrap.js"></script>
+<!--Contact form-->
+<section class="mt-5" id="contact">
+    <div class="container-md bg-light shadow-lg py-4">
+        <div class="text-center">
+            <h2 class="">Get in touch <i class="bi bi-person-lines-fill"></i></h2>
+            <p class="">Questions to ask? Fill the form and we will respond!</p>
+        </div>
+
+        <div class="row justify-content-center mt-5 mb-3">
+            <div class="col-md-6">
+                <form method="post">
+
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text bg-secondary text-white bi bi-envelope-check-fill me-1"></span>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="yourbest@email.com" required>
+                        <span class="tt input-group-text bg-light bi bi-question-circle text-muted me-1" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Please enter a valid email address. We'll use it to send you important updates."></span>
+                    </div>
+
+                    <label for="name" class="form-label">Your name</label>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text bg-secondary text-white bi bi-person-circle me-1"></span>
+                        <input class="form-control" type="text" id="name" placeholder="How can we call you?" required>
+                        <span class="tt input-group-text bg-light bi bi-question-circle text-muted me-1" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter your name as you'd like us to call you."></span>
+                    </div>
+
+                    <label for="PhoneNumber" class="form-label">Phone number</label>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text bg-secondary text-white bi bi-phone me-1"></span>
+                        <input type="tel" class="form-control" id="PhoneNumber" placeholder="What's your telefone number?" required>
+                        <span class="tt input-group-text bg-light bi bi-question-circle text-muted me-1" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Enter a valid phone number so we can contact you later."></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <textarea class="form-control" aria-label="Your questions" rows="3" placeholder="What are your questions?" required></textarea>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="subject">Your question is about?</label>
+                        <select id="subject" class="form-select" required>
+                            <option value="" selected disabled hidden="">Select one</option>
+                            <option value="pricing">Pricing</option>
+                            <option value="content">Book content</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+<!--                    <div class="mb-3 form-check my-4">-->
+<!--                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>-->
+<!--                        <label class="form-check-label" for="exampleCheck1" >I agree</label>-->
+<!--                        <div id="emailHelp" class="form-text">We'll never share your personal data with anyone else.</div>-->
+<!--                    </div>-->
+
+                    <div class="w-100 d-flex flex-row justify-content-center align-items-center">
+                        <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Modal trigger-->
+<div class="container mt-5">
+    <div class="text-center">
+        <h2 class="">Stay in the loop</h2>
+        <p class="lead">Get the latest updates as they happen...</p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <p class="my-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consectetur exercitationem iusto, modi mollitia neque qui sunt vel? A alias animi aperiam ipsa minima minus mollitia officiis quo tempora? Fugiat.
+            </p>
+
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Register for updates</button>
+
+        </div>
+    </div>
+</div>
+
+<footer class="d-flex py-5 mt-5 bg-dark justify-content-center text-white">
+
+    <div class="">
+        <p>Low cost footer</p>
+        <a href="#intro" class="btn btn-primary">Go to the top</a>
+    </div>
+
+
+</footer>
+
+
+
+<!--modal itself-->
+<div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-title">Get the latest updates</h5>
+                <button class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, assumenda consequuntur cupiditate dignissimos eius esse expedita facilis, illum iste quo repellat, repudiandae similique temporibus tenetur ullam voluptas voluptatem. Cum, inventore?</p>
+                <label for="modal-email" class="form-label">Your e-mail address</label>
+                <input type="email" id="modal-email" class="form-control" placeholder="yourbest@email.com">
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--offcanvas-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">My other books</h5>
+        <button type="button" class="btn btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores incidunt nam quas similique! Cupiditate
+            debitis, laudantium molestiae nihil odio reiciendis rerum vel voluptas. Ad aspernatur, dolorem quasi rerum
+            temporibus veniam?</p>
+
+        <div class="dropdown mt-3">
+
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown-button" data-bs-toggle="dropdown">Choose a book title</button>
+            <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+                <li><a href="#" class="dropdown-item">Become a react superhero</a></li>
+                <li><a href="#" class="dropdown-item">Conquer VueJS</a></li>
+                <li><a href="#" class="dropdown-item">Levelling up in Next.js</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/inputmask.min.js"></script>
+
+
+<script>
+    // Aplica a máscara ao campo de telefone
+    Inputmask("(99) 99999-9999").mask(document.getElementById("PhoneNumber"));
+</script>
+
+
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipTriggerList.forEach(tooltip => {
+        new bootstrap.Tooltip(tooltip)
+    })
+</script>
+
 </body>
 </html>
